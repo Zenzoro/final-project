@@ -30,12 +30,13 @@
   <header class="header" data-header>
     <div class="header-top">
       <div class="container">
+        <div class="brand-container">
+          <img class="logo" src="/assets/images/login-logo.png" alt="" />
         <h2>DLBOOKS</h2>
-        <a href="#" class="logo">
-        </a>
-
+        </div>
+        
         <div class="input-wrapper">
-          <input type="search" name="search" placeholder="Search our store" class="input-field">
+          <input type="search" name="search" placeholder="Search Ebooks" class="input-field">
 
           <button class="btn btn-primary">Search</button>
         </div>
@@ -46,12 +47,10 @@
             <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
           </button>
 
-          <button class="header-action-btn" aria-label="user" title="User">
+          <a href="login.html"><button class="header-action-btn" aria-label="user" title="User">
             <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-          </button>
-
+          </button></a>
         </div>
-
       </div>
     </div>
 
@@ -65,8 +64,8 @@
           </button>
 
           <div class="navbar-top">
-            <input type="search" name="search" placeholder="Search for books" class="input-field">
-
+            <input type="search" name="search" placeholder="Search for books" class="input-field" style="color:white;">
+            
             <button class="search-btn" aria-label="Search">
               <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
             </button>
@@ -75,17 +74,13 @@
           <ul class="navbar-list">
 
             <li>
-              <a href="login.html" class="navbar-link">Home</a>
+              <a href="#" class="navbar-link">Home</a>
             </li>
 
             <li>
-              <a href="https://lorem-login-page.netlify.app/" class="navbar-link">Login</a>
+              <a href="login.html" class="navbar-link">Login</a>
             </li>
-
-            <li>
-              <a href="#" class="navbar-link">Admin</a>
-            </li>
-
+            
             <li>
               <a href="#" class="navbar-link">About Us</a>
             </li>
@@ -113,17 +108,16 @@
           <div class="hero-content">
 
             <h1 class="h1 hero-title has-after">
-              Free EBooks <br>
-              Download Now.
+              Download<br>
+              Online Books
             </h1>
 
             <p class="hero-text">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some formr.
+             Unlock endless worlds with our vast library of downloadable ebooks. Dive into adventures, uncover knowledge, and explore new horizons—all at your fingertips
             </p>
 
             <div class="btn-wrapper">
-              <a href="https://lorem-login-page.netlify.app/" class="btn">
+              <a href="login.html" class="btn">
                 <span class="span">Get started</span>
               </a>
 
@@ -132,23 +126,16 @@
           </div>
 
           <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" width="475" height="600" alt="hero banner" class="w-100">
+            <img src="/assets/images/hero-banner.png" width="475" height="600" alt="hero banner" class="w-100">
           </figure>
 
         </div>
       </section>
 
-
-
-
-      <!-- 
-        - #FEATURED COLLECTION
-      -->
-
       <section class="section featured" aria-label="featured collection">
         <div class="container">
 
-          <h2 class="h2 section-title">Featured Collections</h2>
+          <h2 class="h2 section-title">Random Collections</h2>
 
           <p class="section-text">
             Contrary to popular belief, Lorem Ipsum is not simply random.
@@ -159,7 +146,7 @@
             <li>
               <div class="product-card">
 
-                <span class="card-badge">New</span>
+                <span class="badge">List</span>
 
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="./assets/images/book-1.png" width="384" height="480" loading="lazy" alt="Black Night"
@@ -169,6 +156,7 @@
                  <a href="https://dropmb.com/api/shares/MxMzk2M/files/4c2f906c-8bba-4992-9ed0-d5e1a87b7fb1"><button class="action-btn" aria-label="quick view" title="Quick View"><span>Download</span></button></a>
                     
                   </div>
+                  
                 </div>
               </div>
             </li>
@@ -248,7 +236,7 @@
               <a href="https://dropmb.com/api/shares/MxMzk2M/files/4c2f906c-8bba-4992-9ed0-d5e1a87b7fb1"><button class="action-btn" aria-label="quick view" title="Quick View"><span>Download</span></button></a>
                   </div>
                 </div>
-
+                
               </div>
             </li>
 
@@ -260,8 +248,7 @@
                     alt="Murdering Last Year" class="img-cover">
 
                   <div class="card-action">
-
- <a href="https://dropmb.com/api/shares/MxMzk2M/files/4c2f906c-8bba-4992-9ed0-d5e1a87b7fb1"><button class="action-btn" aria-label="quick view" title="Quick View"><span>Download</span></button></a>
+                     <a href="https://dropmb.com/api/shares/MxMzk2M/files/4c2f906c-8bba-4992-9ed0-d5e1a87b7fb1"><button class="action-btn" aria-label="quick view" title="Quick View"><span>Download</span></button></a>
                   </div>
                 </div>
               </div>
@@ -297,15 +284,15 @@
           <ul class="filter-list">
 
             <li>
-              <button class="filter-btn" data-filter-btn="featured">Featured Products</button>
+              <button class="filter-btn" data-filter-btn="featured">Most Downloaded</button>
             </li>
 
             <li>
-              <button class="filter-btn" data-filter-btn="new">New Products</button>
+              <button class="filter-btn" data-filter-btn="new">New Upload</button>
             </li>
 
             <li>
-              <button class="filter-btn" data-filter-btn="sell">Upsell Prodcuts</button>
+              <button class="filter-btn" data-filter-btn="sell">Upcoming</button>
             </li>
 
           </ul>
@@ -438,8 +425,6 @@
     </article>
   </main>
 
-
-
   <footer class="footer has-bg-image" style="background-image: url('./assets/images/section-bg.jpg')">
 
     <div class="footer-top section">
@@ -452,9 +437,7 @@
           </a>
 
           <p class="footer-text" style="color:white;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor inci ut labore et dolore
-            consectetur
-            adipisicing elit sed do eiusmod tempor.
+             DLBOOKS is your ultimate destination for accessing a wealth of knowledge and entertainment through downloadable ebooks. From timeless classics to contemporary bestsellers, we offer a diverse collection to suit every reader's taste.
           </p>
 
           <ul class="social-list">
