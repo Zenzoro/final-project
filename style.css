@@ -92,7 +92,7 @@ button {
   background: none;
   border: none;
   font: inherit;
-  color: inherit;
+  color: var(--white-1);
 }
 
 input { width: 100%; }
@@ -110,10 +110,13 @@ html {
 }
 
 body {
-  background-color: var(--white-1);
+  background-color: hsl(230, 100%, 96%);
   color: var(--eerie-black);
   font-size: 1.6rem;
   line-height: 1.5;
+}
+img {
+  cursor: pointer;
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -214,12 +217,7 @@ body {
   object-fit: cover;
 }
 
-.product-card {
-  position: relative;
-  border: 1px solid var(--white_10);
-}
-
-.product-card .card-badge {
+.product-card .badge {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -325,7 +323,14 @@ body {
 .header h2{
   color: var(--white-1);
 }
-
+.logo {
+  width: 80px;
+}
+.brand-container{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
 .header.active {
   position: fixed;
   transform: translateY(-100%);
@@ -355,6 +360,7 @@ body {
 .nav-open-btn {
   font-size: 24px;
   transition: var(--transition-1);
+  color: var(--white-1);
 }
 
 .header-action :is(.header-action-btn, .nav-open-btn):is(:hover, :focus) {
@@ -406,7 +412,8 @@ body {
   height: 40px;
   display: grid;
   place-items: center;
-  background-color: var(--jet);
+  background-color: var(--white-1);
+  color: var(--granite-gray);
   transition: var(--transition-1);
 }
 
@@ -422,6 +429,7 @@ body {
   font-size: var(--fs-6);
   padding: 15px;
   outline: none;
+  color: white;
 }
 
 .navbar-top .search-btn {
@@ -431,6 +439,7 @@ body {
   bottom: 0;
   border-inline-start: 1px solid var(--white-1);
   padding-inline: 15px;
+  color : var(--white-1);
 }
 
 .navbar-list {
@@ -480,6 +489,7 @@ body {
 .hero .container {
   display: grid;
   gap: 20px;
+  color: var(--white-1);
 }
 
 .hero-title::after {
@@ -558,44 +568,6 @@ body {
 .featured .grid-list { gap: 10px; }
 
 
-
-
-
-/*-----------------------------------*\
-  #OFFER
-\*-----------------------------------*/
-
-.offer { text-align: center; }
-
-.offer .section-subtitle { font-size: var(--fs-3); }
-
-.offer .section-title {
-  --fs-2: 3rem;
-  color: var(--maximum-blue-green);
-  margin-block: 20px 30px;
-}
-
-.countdown-list {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-block: 25px 40px;
-}
-
-.countdown-time {
-  font-size: var(--fs-5);
-  margin-block-end: 8px;
-}
-
-.offer .btn {
-  padding-block: 12px;
-  margin-inline: auto;
-}
-
-
-
-
-
 /*-----------------------------------*\
   #POPULAR
 \*-----------------------------------*/
@@ -615,6 +587,7 @@ body {
   font-size: var(--fs-5);
   padding: 5px 20px;
   transition: var(--transition-1);
+  color: var(--eerie-black_70);
 }
 
 .filter-btn.active { color: var(--maximum-blue-green); }
@@ -666,6 +639,7 @@ body {
 .copyright {
   font-size: var(--fs-6);
   margin-block-end: 20px;
+  color: var(--white-1);
 }
 
 .footer-bottom .w-100 {
@@ -1045,23 +1019,6 @@ body {
   .feature .grid-list { grid-template-columns: 1fr 1fr; }
 
   .feature-card .card-title { --fs-6: 1.8rem; }
-
-
-
-  /**
-   * OFFER
-   */
-
-  .offer .container { max-width: 550px; }
-
-  .offer .section-title { --fs-2: 4.6rem; }
-
-  .offer .section-text { max-width: unset; }
-
-  .countdown-list { gap: 50px; }
-
-  .countdown-label { font-size: var(--fs-4); }
-
 
 
   /**
